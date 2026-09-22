@@ -1,0 +1,36 @@
+
+body {
+  background-color: rgb(161, 255, 183);
+  font-family: courier;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+h1, h2 {
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 {
+  font-size: 9vw;
+  line-height: 1;
+  font-family: 'helvetica';
+  font-style:bold  ;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 20px;
+}
+
+a {
+  color: black;
+}
+
+div{
+  text-align: center;
+}
