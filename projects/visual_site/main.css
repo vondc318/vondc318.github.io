@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Inter:Regular";
+  src: url("https://static.figma.com/font/Inter_1") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+.collage {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 1440 / 1024;
+}
+
+.collage-link {
+  position: absolute;
+  display: block;
+}
+
+.collage-link:focus-visible {
+  outline: 4px solid #000;
+  outline-offset: 4px;
+}
+
+.collage-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.floor {
+  left: 3.472%;
+  top: 4.297%;
+  width: 24.931%;
+  height: 23.242%;
+}
+
+.club {
+  left: 3.472%;
+  top: 31.641%;
+  width: 24.931%;
+  height: 26.27%;
+}
+
+.grass {
+  left: 61.667%;
+  top: 4.688%;
+  width: 35.972%;
+  height: 46.68%;
+}
+
+.baby {
+  left: 3.472%;
+  top: 62.012%;
+  width: 16.042%;
+  height: 35.84%;
+}
+
+.portrait {
+  left: 26.528%;
+  top: 56.543%;
+  width: 22.014%;
+  height: 41.309%;
+}
+
+.character {
+  left: 32.361%;
+  top: 54.199%;
+  width: 38.819%;
+  height: 68.066%;
+}
+
+.character img {
+  transform: rotate(180deg) scaleY(-1);
+}
+
+.magazine {
+  left: 72.05%;
+  top: 42.06%;
+  width: 22.57%;
+  height: 54.79%;
+  transform: rotate(15.83deg);
+}
+
+.magazine img {
+  object-fit: contain;
+}
+
+.shelf {
+  left: 30.069%;
+  top: 22.461%;
+  width: 30%;
+  height: 16.309%;
+  overflow: hidden;
+}
+
+.shelf img {
+  position: absolute;
+  left: 0.04%;
+  top: -94.32%;
+  width: 100%;
+  height: 344.91%;
+  max-width: none;
+}
+
+.title {
+  left: 33.333%;
+  top: 0.293%;
+  width: 25%;
+  height: 56.25%;
+}
+
+.title img {
+  object-fit: fill;
+}
+
+.wedding {
+  left: 13.681%;
+  top: 50%;
+  width: 21.25%;
+  height: 35.449%;
+  overflow: hidden;
+}
+
+.wedding img {
+  position: absolute;
+  left: 0;
+  top: -41.14%;
+  width: 100%;
+  height: 181.87%;
+  max-width: none;
+}
+
+.floor-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.floor-page__image {
+  position: fixed;
+  top: -3.223vh;
+  left: -9.514vw;
+  width: 114.125vw;
+  height: 106.5vh;
+  max-width: none;
+  object-fit: cover;
+  transform: rotate(0.06deg);
+}
+
+.magazine-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.magazine-page__photo {
+  position: fixed;
+  top: 18.848vh;
+  left: 33.403vw;
+  width: 33.194vw;
+  height: 62.305vh;
+  object-fit: cover;
+}
+
+.magazine-page__logo {
+  position: fixed;
+  width: 37.639vw;
+  height: 78.906vh;
+}
+
+.magazine-page__logo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+}
+
+.magazine-page__logo--1 {
+  top: -47.949vh;
+  left: 62.361vw;
+}
+
+.magazine-page__logo--2 {
+  top: -14.844vh;
+  left: 60.278vw;
+}
+
+.magazine-page__logo--3 {
+  top: 21.094vh;
+  left: 63.889vw;
+}
+
+.magazine-page__logo--4 {
+  top: -57.813vh;
+  left: 37.5vw;
+}
+
+.magazine-page__logo--5 {
+  top: -47.949vh;
+  left: -1.458vw;
+}
+
+.magazine-page__logo--6 {
+  top: -12.988vh;
+  left: -14.514vw;
+}
+
+.magazine-page__logo--7 {
+  top: 21.094vh;
+  left: -1.458vw;
+}
+
+.magazine-page__logo--8 {
+  top: -10.156vh;
+  left: 8.056vw;
+}
+
+.magazine-page__logo--9 {
+  top: 24.609vh;
+  left: 45.694vw;
+}
+
+.magazine-page__logo--10 {
+  top: 30.957vh;
+  left: 20.278vw;
+}
+
+.character-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.character-page__image {
+  position: fixed;
+  max-width: none;
+  object-fit: cover;
+}
+
+.character-page__painting {
+  top: -13.086vh;
+  left: -10.972vw;
+  width: 73.194vw;
+  height: 72.754vh;
+}
+
+.character-page__drawing {
+  top: 45.508vh;
+  left: 27.778vw;
+  width: 58.264vw;
+  height: 58.203vh;
+}
+
+.character-page__cartoon {
+  top: 59.668vh;
+  left: -0.486vw;
+  width: 26.111vw;
+  height: 48.926vh;
+}
+
+.character-page__emoji {
+  top: 2.441vh;
+  left: 62.222vw;
+  width: 57.292vw;
+  height: 80.566vh;
+}
+
+.character-page__message {
+  position: fixed;
+  top: 80.371vh;
+  left: 46.042vw;
+  width: 53.958vw;
+  height: 35.547vh;
+  margin: 0;
+  color: #ff00fb;
+  font-family: "Inter:Regular", sans-serif;
+  font-size: clamp(40px, 5.556vw, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  word-break: break-word;
+}
+
+.baby-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.baby-page__dog {
+  position: fixed;
+  top: -18.848vh;
+  left: 27.153vw;
+  width: 41.736vw;
+  height: 130.664vh;
+  max-width: none;
+  object-fit: cover;
+}
+
+.baby-page__message {
+  position: fixed;
+  top: 24.512vh;
+  left: 22.708vw;
+  width: 5.278vw;
+  height: 63.867vh;
+  color: #000;
+  font-family: "Inter:Regular", sans-serif;
+  font-size: clamp(60px, 8.333vw, 120px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.baby-page__message p {
+  margin: 0;
+  line-height: normal;
+}
+
+.club-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.club-page__frog {
+  position: fixed;
+  top: 5.078vh;
+  left: 34.306vw;
+  width: 31.319vw;
+  height: 89.746vh;
+  max-width: none;
+  object-fit: cover;
+}
+
+.grass-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.grass-page__image {
+  position: fixed;
+  max-width: none;
+  object-fit: cover;
+}
+
+.grass-page__magazine {
+  top: 2.441vh;
+  left: 53.125vw;
+  width: 43.958vw;
+  height: 68.75vh;
+}
+
+.grass-page__drawing {
+  top: 2.441vh;
+  left: 20.556vw;
+  width: 58.819vw;
+  height: 101.27vh;
+}
+
+.grass-page__cat {
+  top: 33.691vh;
+  left: -8.333vw;
+  width: 66.667vw;
+  height: 66.309vh;
+}
+
+.wedding-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  background: #fff;
+}
+
+.wedding-page__flowers {
+  position: fixed;
+  top: -8.691vh;
+  left: -12.986vw;
+  width: 125.903vw;
+  height: 117.383vh;
+  max-width: none;
+  object-fit: cover;
+}
