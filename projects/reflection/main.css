@@ -47,14 +47,3 @@ a {
 .back {
   text-align: center;
 }
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background-image: url("../backgroundlandingpage.png");
-  background-size: cover;
-  background-position: center;
-  mix-blend-mode: multiply;
-}
