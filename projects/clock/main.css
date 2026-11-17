@@ -1,0 +1,55 @@
+body {
+  background-color: #f5f9fb;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 10vh auto 0;
+}
+
+.puddle {
+  background-color: #00B5FF;
+  height: 10px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.mover {
+  background: linear-gradient(135deg, #adecff, #78e0ff);
+  height: 140px;
+  width: 140px;
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  transform-origin: bottom center;
+  border-radius: 12px;
+}
+
+.drip {
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background-color: #45a3bf;
+  animation: drip 1.2s ease-in forwards;
+}
+
+@keyframes drip {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(var(--fall)); opacity: 0.3; }
+}
+
+.reset {
+  animation: appear 3s ease-out;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+}
